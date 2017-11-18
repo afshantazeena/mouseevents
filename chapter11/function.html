@@ -10,10 +10,18 @@
 		
 		<script type="text/javascript" src="includes/jquery-3.2.1.js"></script>
 		<link rel="stylesheet" type="text/css" href="style.css" media="all" />
-		
+		<style> 
+		img{
+
+height:300px;
+width:400px;
+border:1px solid red;
+
+			}
+			</style>
 	</head>
 	<body>
-	<img src="images.IMG_0576.JPG" alt="" />
+	
 		<input type="button" value="click" class="new1"/>
 		<input type="button" value="click to show" class="new2"/>
 		<input type="button" value="click to hide or show" class="new3"/>
@@ -21,19 +29,25 @@
 			
 			$(document).ready(function(){
 				$('.new1').click(function(){
-					$(img).hide();
-					
-					});
-				
-				
+					$('img').hide();		
 				});
-			
+				$('.new2').click(function(){
+					$('img').show();		
+				});
+				$('.new3').click(function(){
+					$('img').toggle();		
+				});
+				
+				
+				
+				
+			});
 			
 			
 			</script>
 		
-		
-		
+		<br/>
+		<img src="images/4.jpg.jpg" alt="" />
 		
 		
 		
